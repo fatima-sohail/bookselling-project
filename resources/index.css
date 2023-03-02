@@ -1,3 +1,42 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    line-height: 2em ;
+    color: black;
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    box-shadow: 0 0 1em --0.25em;
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    color: rgb(72,61,139);
+}
+
+button {
+    background-color: rgb(65,105,225);
+    color: white;
+    border-color: rgb(65,105,225);
+    /*padding: 0; if you dont want the shadow*/
+}
+
+.hero {
+    max-width: 64em; /*to make sure the width of hero element doesnt go above certain limit*/
+    padding: 1em; /*to avoid touching the edges of screen*/
+    margin: 0 auto; /*to bring the hero element to the center */
+
+     /*in order to have image on the left and move the text to the right side*/
+     display: flex;
+     gap: 4em; /*to create gap betweent the content on the left side and right side*/
+
+     align-items: center; /*children of hero element (image and text) are aligned in a way that 
+     ensures equal space from the top and bottom of the image in accordance with the text on the right */
+
+}
