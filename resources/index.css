@@ -11,7 +11,7 @@ body {
 img {
     max-width: 100%;
     width: auto;
-    box-shadow: 0 0 1em --0.25em;
+    box-shadow: 0 0 1em --0.25em lightsteelblue;
 }
 
 h4 {
@@ -34,9 +34,25 @@ button {
 
      /*in order to have image on the left and move the text to the right side*/
      display: flex;
-     gap: 4em; /*to create gap betweent the content on the left side and right side*/
+     gap: 4em; /*to create gap betweent the 2 boxes (content on the left side)and (right side)*/
 
      align-items: center; /*children of hero element (image and text) are aligned in a way that 
      ensures equal space from the top and bottom of the image in accordance with the text on the right */
 
+     min-height: 100 vh; /*view height relative to screen type(phone, laptop). 100vh means its gonna
+     cover 100% of the screen*/
+
 }
+     @media (max-width: 800px) {
+        /*point where things stop being displayed horizontally and 
+        instead dispalyed vertically*/
+
+        .hero {
+            flex-direction: column;
+            gap: 0;
+        }
+     } 
+
+    
+     
+
